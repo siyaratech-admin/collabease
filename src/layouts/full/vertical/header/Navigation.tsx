@@ -21,7 +21,6 @@ const AppDD = () => {
   };
 
   return (<>
-    <Logo />
     <Box>
       <Button
         aria-label="show 11 new notifications"

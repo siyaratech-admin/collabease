@@ -13,6 +13,7 @@ import Language from './Language';
 import Navigation from './Navigation';
 import MobileRightSidebar from './MobileRightSidebar';
 import { CustomizerContext } from 'src/context/CustomizerContext';
+import Logo from '../../shared/logo/Logo';
 
 const Header = () => {
   const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up('lg'));
@@ -67,6 +68,8 @@ const Header = () => {
           {/* Search Dropdown */}
           {/* ------------------------------------------- */}
           {/* <Search /> */}
+             <Logo />
+         
           {lgUp ? (
             <>
               <Navigation />
@@ -75,7 +78,7 @@ const Header = () => {
 
           <Box flexGrow={1} />
           <Stack spacing={1} direction="row" alignItems="center">
-            <Language />
+            {/* <Language /> */}
             {/* ------------------------------------------- */}
             {/* Ecommerce Dropdown */}
             {/* ------------------------------------------- */}
@@ -83,14 +86,14 @@ const Header = () => {
             {/* ------------------------------------------- */}
             {/* End Ecommerce Dropdown */}
             {/* ------------------------------------------- */}
-            <IconButton size="large" color="inherit">
+            {/* <IconButton size="large" color="inherit">
               {activeMode === 'light' ? (
                 <IconMoon size="21" stroke="1.5" onClick={() => setActiveMode("dark")}
                 />
               ) : (
                 <IconSun size="21" stroke="1.5" onClick={() => setActiveMode("light")} />
               )}
-            </IconButton>
+            </IconButton> */}
             {/* <Notifications /> */}
             {/* ------------------------------------------- */}
             {/* Toggle Right Sidebar for mobile */}
